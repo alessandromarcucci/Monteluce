@@ -1,0 +1,97 @@
+#VRML V2.0 utf8
+
+#colonne interne della chiesa
+Transform{
+	children[
+		Shape {
+			appearance DEF ColonnaInterno Appearance {
+				texture ImageTexture {
+				url "C:\monteluce\pictures\colonna.jpg"
+			}
+		}
+			geometry Box{
+				size 4.5 50.0 4.0
+			}
+		}
+		Transform {
+			translation -1.75 -24.0 -2.0
+			children[
+				Inline {
+					url "C:\monteluce\colonnainternochiesa.wrl"
+				}
+				Transform {
+					translation	1.0 0.0 0.0
+					children[
+						Inline {
+							url "C:\monteluce\colonnainternochiesa.wrl"
+				}
+				Transform {
+					translation	1.0 0.0 0.0
+					children[
+						Inline {
+							url "C:\monteluce\colonnainternochiesa.wrl"
+				}
+				Transform {
+					translation	1.0 0.0 0.0
+					children[
+						Inline {
+							url "C:\monteluce\desktop\colonnainternochiesa.wrl"
+				}
+				Transform {
+					translation	1.0 0.0 1.0
+					children[
+						Inline {
+							url "C:\monteluce\desktop\colonnainternochiesa.wrl"
+						}
+						Transform {
+					translation	0.0 0.0 1.0
+					children[
+						Inline {
+							url "C:\monteluce\colonnainternochiesa.wrl"
+						}
+						Transform {
+					translation	0.0 0.0 1.0
+					children[
+						Inline {
+							url "C:\monteluce\colonnainternochiesa.wrl"
+						}
+						Transform {
+					translation	-1.0 0.0 1.0
+					children[
+						Inline {
+							url "C:\monteluce\colonnainternochiesa.wrl"
+						}
+						
+						Transform {
+					translation	-1.0 0.0 0.0
+					children[
+						Inline {
+							url "C:\monteluce\colonnainternochiesa.wrl"
+						}
+						Transform {
+					translation	-1.0 0.0 0.0
+					children[
+						Inline {
+							url "C:\monteluce\colonnainternochiesa.wrl"
+						}Transform {
+					translation	-1.0 0.0 0.0
+					children[
+						Inline {
+							url "C:\monteluce\colonnainternochiesa.wrl"
+						}
+
+					]}
+				]}
+			]}
+		]}
+	]}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+
+
+

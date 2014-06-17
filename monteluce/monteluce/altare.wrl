@@ -1,0 +1,75 @@
+#VRML V2.0 utf8
+
+#altare chiesa
+		
+
+
+#1 parte altare 
+Transform{
+			children [
+				Shape{
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"C:\users\alessandro\pictures\pavimentochiesa.jpg"
+						}
+					}
+					geometry Box{
+						size 52.0 1.0 28.0
+					}
+				}
+			
+#2 parte altare
+		Transform{
+			translation 0.0 1.0 -1.0
+			children[
+				Shape{
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"C:\users\alessandro\pictures\pavimentochiesa.jpg"
+						}
+					}
+					geometry Box{
+						size 48.0 1.0 26.0
+					}
+				}
+			]
+		}
+#parte 3 altare
+		Transform {
+			translation	0.0 2.0 -6.0
+			children[
+				Shape{
+					appearance Appearance {
+						texture	ImageTexture {
+							url "C:\users\alessandro\pictures\pavimentochiesa.jpg"
+						}
+					}
+					geometry Box {
+						size 36.0 1.0 16.0
+					}
+				}
+			]
+		}
+#parte 4 altare
+		Transform {
+			translation	0.0 3.25 -7.5
+			children[
+				Shape{
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"C:\users\alessandro\pictures\pavimentochiesa.jpg"
+						}
+					}
+					geometry Box{
+						size 28.0 1.50 13.0
+					}
+				}
+			]
+		}
+
+
+
+
+		]
+
+		}

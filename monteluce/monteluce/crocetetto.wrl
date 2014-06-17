@@ -1,0 +1,23 @@
+#VRML V2.0 utf8
+
+#croce tetto
+Transform {
+	children
+		Shape{
+			appearance Appearance {
+				texture ImageTexture {
+				url "C:\monteluce\pictures\metallo.jpg"
+			}
+		}
+			geometry Extrusion {
+				crossSection [0.0 0.0, -1.0 -0.3,
+							  -1.0 6.0, -4.0 6.0,
+							  -4.0 7.0, -1.0 7.0,
+							  -1.0 10.0, 1.0 10.0,
+							  1.0 7.0, 4.0 7.0,
+							  4.0 6.0, 1.0 6.0,
+							  1.0 -0.3]
+							  spine[0.0 0.0 0.0, 0.0 0.0 -1.0]
+						  }
+					  }
+				  }

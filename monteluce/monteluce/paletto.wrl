@@ -1,0 +1,66 @@
+#VRML V2.0 utf8
+
+#paletti lato sinistro chiesa
+Transform {
+	children [
+		Shape {
+			appearance DEF Paletto Appearance {
+				texture	ImageTexture {
+					url	"C:\monteluce\pictures\lateralesinistro.jpg"
+				}
+			}
+			geometry Cylinder {
+				radius 0.5 
+				height 0.70
+			}
+		}
+		Transform {
+			translation	0.0 0.60 0.0 
+			children[
+			    Shape {
+				appearance USE Paletto
+				geometry Box {
+					size 1.0 0.5 1.0
+				}
+			}
+			Transform {
+				translation	0.0 3.25 0.0
+				children[
+					Shape{
+						appearance USE Paletto
+						geometry Cylinder{
+							radius 0.4 
+							height 6.0
+						}
+					
+					}
+					Transform{
+						translation	0.0 3.25 0.0
+						children[
+							Shape {
+								appearance USE Paletto
+								geometry Cylinder {
+									radius 0.5
+									height 0.5
+								}
+							}
+							Transform {
+								translation	0.0 0.50 0.0
+								children Shape {
+									appearance USE Paletto
+									geometry Sphere	{
+										radius 0.25
+									}
+								}
+							}
+						]}
+					]}
+				
+				
+				]
+			}
+		]}
+
+		
+	
+	

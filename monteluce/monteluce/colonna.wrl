@@ -1,0 +1,71 @@
+#VRML V2.0 utf8
+
+Transform{
+	children [
+		Shape{
+			appearance Appearance {
+				texture	ImageTexture {
+					url	" C:\monteluce\pictures\bricks.jpg"	 
+				}
+				textureTransform TextureTransform {
+					scale 1.0 3.0
+				}
+			}
+			geometry Box{
+				size 6.0 44.0 2.0
+			}
+		}
+
+
+Transform{
+	translation	1.0 33.0 0.0
+	children [
+		Shape{
+			appearance Appearance {
+				texture	ImageTexture {
+					url	"C:\monteluce\pictures\bricks.jpg"
+				}
+				textureTransform TextureTransform {
+					scale 1.0 1.0
+				}
+			}
+			geometry Box {
+				size 4.0 22.0 2.0
+			}
+		}
+	]
+}
+Transform {
+	translation	-2.0 22.0 0.0
+	children [
+		Shape{
+			appearance Appearance {
+				texture	ImageTexture {
+					url	"C:\monteluce\pictures\bricks.jpg"
+				}
+				textureTransform TextureTransform {
+					scale 1.0 1.0
+				}
+			}
+			geometry IndexedFaceSet	{
+				coord Coordinate {
+					point[ 1.0 0.0 -1.0, -1.0 0.0 -1.0,
+							-1.0 0.0 1.0, 1.0 0.0 1.0,
+							1.0 2.0 -1.0, 1.0 2.0 1.0]
+						}
+						coordIndex [
+							0,1,4,-1,
+							1,2,5,4,-1,
+							2,3,5]
+					
+					}
+					
+				}
+
+			]
+		}
+
+
+
+]
+}

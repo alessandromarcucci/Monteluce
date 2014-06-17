@@ -1,0 +1,532 @@
+#VRML V2.0 utf8
+
+Transform {
+	children[
+		Shape{
+			appearance  Appearance {
+				texture ImageTexture {
+				url "C:\monteluce\pictures\pavimento2.jpg"}
+			}
+			geometry Box{
+				size 56.0 1.0 32.0
+			}
+		}
+		Transform {
+			translation	0.0 1.0 -3.0
+			children Shape{
+				appearance DEF PavimentoAltare Appearance {
+					texture	ImageTexture {
+						url	"C:\monteluce\pictures\pavimento.jpg"}
+					}
+					geometry Box{
+						size 48.0 1.0 26.0
+					}
+				}
+			}
+			Transform {
+				translation 0.0 2.25 -7.0
+				children Shape{
+					appearance USE PavimentoAltare
+					geometry Box{
+						size 32.0 1.5 18.0
+					}
+				}
+			}
+			Transform{
+				translation	0.0 3.75 -8.0
+				children Shape{
+					appearance USE PavimentoAltare
+					geometry Box{
+						size 28.0 1.5 16.0
+					}
+				}
+			}
+			Transform {
+				translation	0.0 4.55 -8.0
+				children Shape{
+					appearance Appearance {
+						texture ImageTexture {
+						url "C:\monteluce\pictures\tappetorosso.jpg"
+					}
+				}
+					geometry Box {
+						size 27.0 0.1 16.0
+					}
+				}
+			}
+		   #colonne altare
+			#colonna sinistra esterna
+			Transform {
+				translation	-26.0 10.5 -14.0
+				children[
+				    Shape{
+					appearance DEF blocco Appearance {
+						texture ImageTexture {
+							url	"C:\monteluce\pictures\blocco.jpg"
+						}
+							}	 
+					geometry Box{
+						size 3.8 20.0 3.8
+					}
+				}
+				Transform {
+					translation	0.0 10.5 0.0
+					children[
+						Shape{
+							appearance DEF partecolonna Appearance {
+								texture	ImageTexture {
+									url	"C:\monteluce\pictures\partecolonna.jpg"
+								}
+							}
+							geometry Box{
+								size 4.0 1.0 4.0
+							}
+						}
+						Transform {
+							translation	0.0 1.0 0.0
+							children[ 
+								Shape{
+									appearance DEF partecolonna2 Appearance	{
+										texture	ImageTexture {
+											url	"C:\monteluce\pictures\partecolonna2.jpg"
+										}
+									}
+									geometry Cylinder {
+										radius 2.0
+										height 1.0
+									}
+								}
+								Transform {
+									translation	0.0 1.0 0.0
+									children [
+										Shape {
+											appearance USE partecolonna
+											geometry Cylinder {
+												radius 1.9
+												height 1.0
+											}
+										}
+										Transform{
+											translation	0.0 15.5 0.0
+											children[ 
+												Shape{
+													appearance DEF marmonero Appearance {
+														texture ImageTexture {
+														url "C:\monteluce\pictures\marmonero.jpg"
+													}
+												}
+													geometry Box {
+														size 3.3 30.0 3.3
+													}
+												}
+												Transform {
+													translation	0.0 15.5 0.0
+													children[
+														Shape{
+															appearance USE partecolonna
+															geometry Cylinder {
+																radius 1.9
+																height 1.0
+															}
+													}
+													Transform {
+														translation	0.0 1.0 0.0
+														children[ 
+															Shape{
+																appearance USE partecolonna2
+																geometry Cylinder {
+																	radius 2.0
+																	height 1.0
+															}
+													}
+													Transform {
+														translation	0.0 0.5 0.0
+														children[
+															Shape{
+															appearance USE partecolonna
+															geometry Box{
+																size 4.0 1.0 4.0
+															}
+													}
+												]}
+											]}
+										]}
+									]}
+
+									]}
+							]}
+						]}
+					]}
+
+
+					
+			#colonna destra esterna
+			Transform {
+				translation	26.0 10.5 -14.0
+				children[
+				    Shape{
+					appearance USE blocco
+					geometry Box{
+						size 3.8 20.0 3.8
+					}
+				}
+				Transform {
+					translation	0.0 10.5 0.0
+					children[
+						Shape{
+							appearance USE partecolonna
+							geometry Box{
+								size 4.0 1.0 4.0
+							}
+						}
+						Transform {
+							translation	0.0 1.0 0.0
+							children[ 
+								Shape{
+									appearance USE partecolonna2
+									geometry Cylinder {
+										radius 2.0
+										height 1.0
+									}
+								}
+								Transform {
+									translation	0.0 1.0 0.0
+									children [
+										Shape {
+											appearance USE partecolonna
+											geometry Cylinder {
+												radius 1.9
+												height 1.0
+											}
+										}
+										Transform{
+											translation	0.0 15.5 0.0
+											children[ 
+												Shape{
+													appearance USE marmonero
+													geometry Box {
+														size 3.3 30.0 2.8
+													}
+												}
+												Transform {
+													translation	0.0 15.5 0.0
+													children[
+														Shape{
+															appearance USE partecolonna
+															geometry Cylinder {
+																radius 1.9
+																height 1.0
+															}
+													}
+													Transform {
+														translation	0.0 1.0 0.0
+														children[ 
+															Shape{
+																appearance USE partecolonna2
+																geometry Cylinder {
+																	radius 2.0
+																	height 1.0
+															}
+													}
+													Transform {
+														translation	0.0 0.5 0.0
+														children[
+															Shape{
+															appearance USE partecolonna
+															geometry Box{
+																size 4.0 1.0 4.0
+															}
+													}
+												]}
+											]}
+										]}
+									]}
+
+									]}
+							]}
+						]}
+					]}
+			
+			
+
+		   #colonna interna sinistra
+		Transform {
+				translation	-22.0 10.5 -12.0
+				children[
+				    Shape{
+					appearance USE blocco
+					geometry Box{
+						size 3.8 19.0 3.8
+					}
+				}
+				Transform {
+					translation	0.0 10 0.0
+					children[
+						Shape{
+							appearance USE partecolonna
+							geometry Box{
+								size 4.0 1.0 4.0
+							}
+						}
+						Transform {
+							translation	0.0 1.0 0.0
+							children[ 
+								Shape{
+									appearance USE partecolonna2
+									geometry Cylinder {
+										radius 2.0
+										height 1.0
+									}
+								}
+								Transform {
+									translation	0.0 1.0 0.0
+									children [
+										Shape {
+											appearance USE partecolonna
+											geometry Cylinder {
+												radius 1.9
+												height 1.0
+											}
+										}
+										Transform{
+											translation	0.0 15.5 0.0
+											children[ 
+												Shape{
+													appearance USE marmonero
+													geometry Cylinder {
+														radius 1.7
+														height 30.0
+													}
+												}
+												Transform {
+													translation	0.0 15.5 0.0
+													children[
+														Shape{
+															appearance USE partecolonna
+															geometry Cylinder {
+																radius 1.9
+																height 1.0
+															}
+													}
+													Transform {
+														translation	0.0 1.0 0.0
+														children[ 
+															Shape{
+																appearance USE partecolonna2
+																geometry Cylinder {
+																	radius 2.0
+																	height 1.0
+															}
+													}
+													Transform {
+														translation	0.0 0.5 0.0
+														children[
+															Shape{
+															appearance USE partecolonna
+															geometry Box{
+																size 4.0 1.0 4.0
+															}
+													}
+												]}
+											]}
+										]}
+									]}
+
+									]}
+							]}
+						]}
+					]}
+
+					 #colonna interna destra
+		Transform {
+				translation	22.0 10.5 -12.0
+				children[
+				    Shape{
+						appearance USE blocco 
+						geometry Box{
+						size 3.8 19.0 3.8
+					}
+				}
+				Transform {
+					translation	0.0 10 0.0
+					children[
+						Shape{
+							appearance USE partecolonna
+							geometry Box{
+								size 4.0 1.0 4.0
+							}
+						}
+						Transform {
+							translation	0.0 1.0 0.0
+							children[ 
+								Shape{
+									appearance USE partecolonna2
+									geometry Cylinder {
+										radius 2.0
+										height 1.0
+									}
+								}
+								Transform {
+									translation	0.0 1.0 0.0
+									children [
+										Shape {
+											appearance USE partecolonna
+											geometry Cylinder {
+												radius 1.9
+												height 1.0
+											}
+										}
+										Transform{
+											translation	0.0 15.5 0.0
+											children[ 
+												Shape{
+													appearance USE marmonero
+													geometry Cylinder {
+														radius 1.7
+														height 30.0
+													}
+												}
+												Transform {
+													translation	0.0 15.5 0.0
+													children[
+														Shape{
+															appearance USE partecolonna
+															geometry Cylinder {
+																radius 1.9
+																height 1.0
+															}
+													}
+													Transform {
+														translation	0.0 1.0 0.0
+														children[ 
+															Shape{
+																appearance USE partecolonna2
+																geometry Cylinder {
+																	radius 2.0
+																	height 1.0
+															}
+													}
+													Transform {
+														translation	0.0 0.5 0.0
+														children[
+															Shape{
+															appearance USE partecolonna
+															geometry Box{
+																size 4.0 1.0 4.0
+															}
+													}
+												]}
+											]}
+										]}
+									]}
+
+									]}
+							]}
+						]}
+					]}
+
+					Transform {
+						scale 3.7 2.0 2.0
+						translation	0.0 55.0 -12.5
+						children Inline{
+							url	"C:\monteluce\sopraltare.wrl"
+							
+						}
+						
+					}
+					Transform {
+						scale 4.0 2.3 2.0
+						translation	0.0 55.0 -14
+						children Inline{
+							url	"C:\monteluce\sopraltare.wrl"
+						}
+					}
+					#tavolo altare
+					Transform{
+						scale 0.5 0.8 1.0
+						translation	-9.0 6.0 4.0
+						children[
+							Inline {
+								url	"C:\monteluce\pezzoaltare.wrl"
+							}
+							Transform {
+								translation	5.0 0.0 0.0
+								children[
+									Inline {
+										url	"C:\monteluce\pezzoaltare.wrl"
+									}
+									Transform{
+										translation	5.0 0.0 0.0
+										children[
+											Inline {
+												url	"C:\monteluce\pezzoaltare.wrl"
+											}
+											Transform{
+												translation	5.0 0.0 0.0
+													children[
+														Inline {
+															url	"C:\monteluce\pezzoaltare.wrl"
+														}
+														Transform{
+															translation	5.0 0.0 0.0
+															children[
+																Inline	{
+																	url	"C:\monteluce\pezzoaltare.wrl"
+																}
+																Transform{
+																	translation	5.0 0.0 0.0
+																	children[
+																		Inline {
+																			url	"C:\monteluce\pezzoaltare.wrl"
+																		}
+																		Transform {
+																			translation	5.0 0.0 0.0
+																			children[
+																				Inline{
+																					url	"C:\monteluce\pezzoaltare.wrl"
+																				}
+																				Transform {
+																					translation	5.0 0.0 0.0
+																					children[
+																						Inline {
+																							url	"C:\monteluce\pezzoaltare.wrl"
+																						}
+																					
+
+								]}
+							]}
+						]}
+					]}
+				]}
+			]}
+		]}
+	]}
+		
+	
+
+
+			
+
+		
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

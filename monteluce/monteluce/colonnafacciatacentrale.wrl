@@ -1,0 +1,69 @@
+#VRML V2.0 utf8
+
+#colonnacentrale.wrl
+Transform{
+	children[
+		Shape{
+			appearance DEF Green Appearance{
+				texture	ImageTexture {
+					url	"C:\monteluce\pictures\colonnacentrale.jpg"
+				}
+			}
+			geometry Box {
+				size 1.0 2.0 1.0}
+			}
+		
+
+	
+
+			Transform{
+				translation	0.0 1.5 0.0
+				children [
+					Shape {
+						appearance USE Green
+						geometry Cylinder{
+							radius 0.5 
+							height 1
+						}
+					}
+					Transform {
+						translation 0.0 9.5 0.0
+						children [
+							Shape {
+								appearance USE Green
+								geometry Cylinder{
+									radius 0.4
+									height 18.0
+								}
+							}
+							Transform{
+								translation	0.0 9.25 0.0
+								children[
+									Shape {
+										appearance USE Green
+										geometry Cylinder {
+											radius 0.5
+											height 0.5
+										}
+									}
+
+						
+							Transform {
+								translation	0.0 1.0 0.0
+								children[
+									Shape{
+										appearance USE Green
+										geometry Box{
+											size 1.0 1.5 1.0
+										}
+									}
+								]}
+						 				
+						]}
+		
+			
+				]}
+		]}
+	]}
+			
+
